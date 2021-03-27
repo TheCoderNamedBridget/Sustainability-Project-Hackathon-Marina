@@ -1,0 +1,61 @@
+body {
+  background-color:black;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+.watercontainer{
+  position: absolute;
+  color: white;
+  width: 50%;
+  text-shadow: 5px 5px 6px #000000;
+}
+
+.emissioncontainer{
+  position: absolute;
+  color: white;
+  width: 50%;
+  text-shadow: 5px 5px 6px #000000;
+}
+
+#bannerImage {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttons {
+  background-color: green; /* Green */
+  color: white;
+  text-shadow: 5px 5px 6px #000000;
+
+  border-radius: 25px;
+}
+
+
+
+#resultText {
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  text-shadow: 5px 5px 6px #000000;
+}
+
+
+.impactStatement {
+  position: absolute;
+  top: 75%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  text-shadow: 5px 5px 6px #000000;
+}
+
+
+
