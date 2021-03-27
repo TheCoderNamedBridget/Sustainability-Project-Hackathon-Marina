@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    
+    <div class="container">
+    <img src="sustainbannerpic.png" alt="pretty image with water feet" id="bannerImage" >
+    <div class="impactStatement" style="font-size:5.5vw;">Make a Difference. Track Your Impact.</div>
+
+      <table class="emissioncontainer" align="center">
+        <tr>
+          <td>
+            <div class="watercontainer" style="padding-left: 200px"> 
+                  <h2 >Your Bottle Stats:</h2>
+                  <p>Enter Number Of Refills:</p>
+            
+                  <form>
+                      <div class="w3-show-inline-block">
+                        <input type="text" id="bottlesDrankText" size="20" placeholder="4"></input>
+                        <br>
+                      </div>
+                      <p>Enter oz Per Bottle:</p>
+                      <div class="w3-show-inline-block">
+                        <input type="text" id="ozPerBottleText" size="20" placeholder="8"></input>
+                        <button class="buttons" onclick="getRefills()" type = "button"> Submit</button>
+                        <br>
+                      </div>
+                    </form>
+                    <p class="resultText" id = "bottlesResultText" >Bottles Saved: </p>
+                    <p class="resultText" id = "plasticResultText" >Plastic Saved: </p>
+                    <div class="pics" id = "picsOfBottles" style="padding-top: 30px"> </div>
+                    
+              </div>
+              
+            </td>
+            
+              <div class="emissioncontainer" style="padding-left: 830px"> 
+                <h2 >Your Emission Stats:</h2>
+                <button class="buttons" onclick="changeTransport( walk )">Walk/Bike</button>
+                <button class="buttons" onclick="changeTransport( regCar )">Gassy Car</button>
+                <button class="buttons" onclick="changeTransport( eleCar )">Electricity Car</button>
+
+                <p>Enter Number Of Miles Traveled:</p>
+                <input type="text" id="milesTraveled" size="20" placeholder="5"></input>
+
+                <p>Enter Weight for Accurate Calories:</p>
+                <input type="text" id="weight" size="20" placeholder="150"> </input>
+
+                <button class="buttons" onclick="getEmissionStats()" type="button"> Submit</button>
+
+                <p class="resultText" id = "emissionResultText" >Dollars Saved: </p> 
+                <p class="resultText" id = "caloriesResultText" >Calories Burned: </p>
+
+              </div>
+
+            
+        </tr>
+    </table>
+    </div>
+  </body>
+</html>
